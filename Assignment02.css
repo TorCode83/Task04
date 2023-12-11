@@ -1,0 +1,116 @@
+ 
+/* Font definition */
+   @font-face {
+   font-family:BigShouldersDisplay-VariableFont_wght ;
+   src: url(BigShouldersDisplay-VariableFont_wght.ttf) format(opentype);
+      
+   }
+  
+
+  
+   @font-face{
+   font-family:LexendDeca-VariableFont_wght ;
+   src: url(LexendDeca-VariableFont_wght.ttf) format(opentype)
+         
+
+   }
+ 
+
+/* Setting type style */
+ h1 {
+   font-family: BigShouldersDisplay-VariableFont_wght;
+   font-weight: 700;
+   font-size: 45px;
+    color: hsl(0, 0%, 95%)  
+
+ }
+
+
+  
+ p {
+   font-family: LexendDeca-VariableFont_wght ;
+   font-weight: 400;
+   font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75)
+    
+ }
+ 
+ 
+
+/* Parent controller */
+.columns { 
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+/* Child controller */
+.columns > * {
+
+    flex: 1;
+   
+    margin: 0;
+    padding: 5%;
+
+}
+
+ 
+/* General style */
+.item:nth-child(1) {
+
+background: hsl(31, 77%, 52%);
+
+}
+
+.item:nth-child(2) {
+
+background: hsl(184, 100%, 22%);
+
+}
+
+.item:nth-child(3) {
+
+   background: hsl(179, 100%, 13%);
+
+}
+
+
+/* Buttons */
+
+.btn {
+
+   margin-top: 85px;  
+   background-color: hsl(0, 0%, 95%);
+     color: none;
+     border: none;
+     border-radius: 25px;
+     padding: 15px 40px;
+     min-height: fit-content;
+     min-width: fit-content;
+     font-family: LexendDeca-VariableFont_wght;
+     font-weight: 400;
+     mix-blend-mode: lighten;
+
+     
+
+}
+button:hover{
+   transition-duration: 0.5s;
+   color: #ffffffc9;
+   background:#ffffffbd;
+ }
+ 
+button:active{
+
+color:#000000
+background-color #ffffffbd 
+
+}
